@@ -39,44 +39,6 @@
       <arg name="size" type="uint"/>
     </event>
 
-    <enum name="section">
-      <!-- main sections -->
-      <entry name="text" value="0"/>
-      <entry name="button" value="1"/>
-      <entry name="context_button" value="2"/>
-      <entry name="menu_button" value="3"/>
-      <entry name="option" value="4"/>
-      <entry name="checkbox" value="5"/>
-      <entry name="selectable" value="6"/>
-      <entry name="slider" value="7"/>
-      <entry name="progress" value="8"/>
-      <entry name="property" value="9"/>
-      <entry name="text_edit" value="10"/>
-      <entry name="chart" value="11"/>
-      <entry name="vertical_scroll" value="12"/>
-      <entry name="horizontal_scroll" value="13"/>
-      <entry name="tab" value="14"/>
-      <entry name="combo_box" value="15"/>
-    </enum>
-
-    <event name="color">
-      <description summary="a configuration of a color"/>
-      <arg name="section" type="uint"/>
-      <arg name="red" type="uint"/>
-      <arg name="green" type="uint"/>
-      <arg name="blue" type="uint"/>
-      <arg name="alpha" type="uint"/>
-    </event>
-
-    <event name="padding">
-      <arg name="padding" type="fixed"/>
-    </event>
-
-    <event name="done">
-      <description summary="mark the end of a theme configuration"/>
-    </event>
-
-
   </interface>
 
 </protocol>
