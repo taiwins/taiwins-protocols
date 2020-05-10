@@ -80,12 +80,17 @@
       <arg name="msg" type="uint" summary="message about the output"/>
     </event>
 
-    <event name="shell_msg">
+    <event name="client_msg">
       <description summary="various configuration and msg sends to the client"/>
       <arg name="key" type="uint" summary="the enum msg_type"/>
-      <!-- TODO change to array instead -->
       <arg name="value" type="array" summary="various data values"/>
     </event>
+
+    <request name="server_msg">
+      <description summary="various configuration and msg sends to the server"/>
+      <arg name="key" type="uint" summary="the enum msg_type"/>
+      <arg name="value" type="array" summary="various data values"/>
+    </request>
 
     <enum name="msg_type">
       <!-- notifications to shell -->
@@ -95,12 +100,6 @@
       <!-- shell message -->
       <entry name="panel_pos" value="100"
 	     summary="format: `%d`: taiwins_shell_panel_pos enum"/>
-      <entry name="wallpaper" value="101"
-	     summary="format: `%s`: wallpaper path"/>
-      <entry name="menu" value="102"
-	     summary="format: array serialized from taiwins_menu"/>
-      <entry name="widget" value="103"
-	     summary="format: `%s`: widget path"/>
       <entry name="lock" value="104"
 	     summary="tell shell client to start a locker"/>
 
