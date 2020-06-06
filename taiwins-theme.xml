@@ -40,10 +40,9 @@
     </event>
 
     <event name="cursor">
-      <description summary="accepting cursor theme">
+      <description summary="accepting cursor theme"/>
 	<arg name="name" type="string"/>
 	<arg name="size" type="uint"/>
-      </description>
     </event>
     
   </interface>
