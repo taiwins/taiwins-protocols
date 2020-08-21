@@ -47,6 +47,7 @@
       <description summary="start the widget at point (x, y) "/>
       <arg name="taiwins_ui" type="new_id" interface="taiwins_ui"/>
       <arg name="wl_surface" type="object" interface="wl_surface"/>
+      <arg name="seat" type="object" interface="wl_seat"/>
       <arg name="taiwins_output" type="int"/>
       <arg name="x" type="uint"/>
       <arg name="y" type="uint"/>
