@@ -53,6 +53,7 @@
       </description>
       <arg name="ui_elem" type="new_id" interface="taiwins_ui"/>
       <arg name="surface" type="object" interface="wl_surface"/>
+      <arg name="seat" type="object" interface="wl_seat"/>
     </request>
 
     <request name="submit">
